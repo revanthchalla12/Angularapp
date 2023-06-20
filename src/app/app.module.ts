@@ -4,13 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { HeaderComponent } from './header/header.component';
+
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [				
     AppComponent,
       NavigationComponent,
-      HeaderComponent
+      LoginComponent,
+      SignupComponent,
+      ProfileComponent
    ],
   imports: [
     BrowserModule,

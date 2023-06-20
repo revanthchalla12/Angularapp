@@ -1,9 +1,8 @@
 <div class="nav">
-    <a href="#">Register &nbsp;&nbsp;&nbsp;</a>
-    
-    <a href="#">Profile&nbsp;&nbsp;&nbsp;</a>
-    <a href="#">About Us&nbsp;&nbsp;&nbsp;</a>
-    <a href="#">Contact&nbsp;&nbsp;&nbsp;</a>
+    <a routerLink="/signup"  >SignUP &nbsp;&nbsp;&nbsp;</a>
+    <a routerLink="/profile"  >Profile&nbsp;&nbsp;&nbsp;</a>
+    <a routerLink="/login" >Login&nbsp;&nbsp;&nbsp;</a>
+    <a href="#" routerLinkActive="active current" >Contact&nbsp;&nbsp;&nbsp;</a>
     <button style="width: fit-content;"  (click)="toggleLogin()">{{ isLoggedIn ? 'Logout' : 'Login' }}</button>
     <div class="message">{{logmessage}}</div>
     <input style="width: fit-content;" type="text" placeholder="Search">
